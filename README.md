@@ -1,6 +1,8 @@
 # ArtTheta_Symmetry_Tool
 ****Description:****
 A mini Python-based symmetry drawing tool inspired by mandala art. It uses geometric transformations and trigonometric calculations to generate Vertical, Rotational, and Radial Symmetry
+
+
 ****Motivation:****
 I wanted to create a project that combines art and programming. Mandala patterns inspired the idea, and the project helped me explore how symmetry can be created using mathematics.
 ****Features****
