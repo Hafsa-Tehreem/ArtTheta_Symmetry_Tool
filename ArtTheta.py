@@ -7,7 +7,7 @@ symmetry=input("Enter the type of Symmetry \n 1)Vertical \n 2)Rotational \n 3)Ra
 while not (symmetry=="Vertical" or symmetry=="Rotational" or symmetry=="Radial"):
     symmetry=input("Wrong Selection! \nEnter Again: ")
 color= input("Pick a color between Red, Green, and Blue:\n")
-while not (color=="Red" or color=="Green" or color=="Blue"):
+while not (color=="Red" or color =="Green" or color =="Blue"):
     color=input("Wrong Selection! \nEnter Again: ")
 if color=="Red":
     color=(255,0,0)
@@ -25,6 +25,13 @@ while running:
             drawing=True
         if event.type==pygame.MOUSEBUTTONUP:
             drawing=False
+        if event.type==pygame.KEYDOWN:
+            if pygame.key.name(event.key)=="b" or pygame.key.name(event.key)=="B":
+                color = (0,0,255)
+            elif pygame.key.name(event.key)=="r" or pygame.key.name(event.key)=="R":
+                color = (255,0,0)
+            elif pygame.key.name(event.key)=="g" or pygame.key.name(event.key)=="G":
+                color = (0,255,0)
     if drawing==True:
         x,y=pygame.mouse.get_pos()
         if symmetry=="Vertical":
@@ -41,3 +48,4 @@ while running:
                 pygame.draw.circle(screen,color,(400+(math.sqrt((400-x)**2+(400-y)**2)*math.cos((-1)**i*math.atan2(400-y,x-400)+i*math.radians(45))),400-(math.sqrt((400-x)**2+(400-y)**2)*math.sin((-1)**i*math.atan2(400-y,x-400)+i*math.radians(45)))),3,0)
     pygame.display.flip()
 pygame.quit()
+
