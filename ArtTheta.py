@@ -7,7 +7,7 @@ symmetry=input("Enter the type of Symmetry \n 1)Vertical \n 2)Rotational \n 3)Ra
 while not (symmetry=="Vertical" or symmetry=="Rotational" or symmetry=="Radial"):
     symmetry=input("Wrong Selection! \nEnter Again: ")
 color= input("Pick a color between Red, Green, and Blue:\n")
-while not (color=="Red" or symmetry=="Green" or symmetry=="Blue"):
+while not (color=="Red" or color=="Green" or color=="Blue"):
     color=input("Wrong Selection! \nEnter Again: ")
 if color=="Red":
     color=(255,0,0)
