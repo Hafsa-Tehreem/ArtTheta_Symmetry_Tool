@@ -40,3 +40,7 @@ Points are both reflected and rotated to create repeating patterns.
 - Trigonometry (sin, cos, atan2)
 - Distance Formula
 - PyGame
+  #How to run:
+  - Install Pygame library using:
+         pip install pygame
+  - Run the script.
